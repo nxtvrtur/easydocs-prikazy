@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Индивидуальные приказы на премию</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечать" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Печать</CommandName>
+				<DefaultButton>true</DefaultButton>
+				<Representation>PictureAndText</Representation>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаСформироватьPDF" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СформироватьPDF</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьPDFРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Документ" id="5">
+			<DataPath>Документ</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ "Премия"</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="ДокументКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="7"/>
+			<Events>
+				<Event name="OnChange">ДокументПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Сотрудники" id="8">
+			<DataPath>Сотрудники</DataPath>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ContextMenu name="СотрудникиКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="СотрудникиКоманднаяПанель" id="10"/>
+			<ExtendedTooltip name="СотрудникиРасширеннаяПодсказка" id="11"/>
+			<SearchStringAddition name="СотрудникиСтрокаПоиска" id="12">
+				<AdditionSource>
+					<Item>Сотрудники</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СотрудникиСтрокаПоискаКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="СотрудникиСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СотрудникиСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>Сотрудники</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СотрудникиСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="СотрудникиСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СотрудникиУправлениеПоиском" id="18">
+				<AdditionSource>
+					<Item>Сотрудники</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СотрудникиУправлениеПоискомКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="СотрудникиУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="СотрудникиПометка" id="21">
+					<DataPath>Сотрудники.Пометка</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СотрудникиПометкаКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="СотрудникиПометкаРасширеннаяПодсказка" id="23"/>
+				</CheckBoxField>
+				<InputField name="СотрудникиСотрудник" id="24">
+					<DataPath>Сотрудники.Сотрудник</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СотрудникиСотрудникКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СотрудникиСотрудникРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="СотрудникиТабельныйНомер" id="27">
+					<DataPath>Сотрудники.ТабельныйНомер</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СотрудникиТабельныйНомерКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="СотрудникиТабельныйНомерРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="СотрудникиДолжность" id="30">
+					<DataPath>Сотрудники.Должность</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СотрудникиДолжностьКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СотрудникиДолжностьРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="СотрудникиПодразделение" id="33">
+					<DataPath>Сотрудники.Подразделение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СотрудникиПодразделениеКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="СотрудникиПодразделениеРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="СотрудникиСумма" id="36">
+					<DataPath>Сотрудники.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="СотрудникиСуммаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="СотрудникиСуммаРасширеннаяПодсказка" id="38"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаОтметка" id="39">
+			<Group>HorizontalIfPossible</Group>
+			<ExtendedTooltip name="ГруппаОтметкаРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<Button name="ОтметитьВсех" id="41">
+					<CommandName>Form.Command.ОтметитьВсех</CommandName>
+					<ExtendedTooltip name="ОтметитьВсехРасширеннаяПодсказка" id="42"/>
+				</Button>
+				<Button name="СнятьОтметку" id="43">
+					<CommandName>Form.Command.СнятьОтметку</CommandName>
+					<ExtendedTooltip name="СнятьОтметкуРасширеннаяПодсказка" id="44"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="45">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТЗ_ПечатьПриказовНаПремию</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Документ" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ "Премия"</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.Премия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Сотрудники" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Пометка" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печатать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сотрудник" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТабельныйНомер" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таб. номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Должность" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="52">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма премии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Печать" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Печать</Action>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+		<Command name="СформироватьPDF" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только прикрепить PDF</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СформироватьPDF</Action>
+		</Command>
+		<Command name="ОтметитьВсех" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметить всех</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОтметитьВсех</Action>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+		<Command name="СнятьОтметку" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметку со всех</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СнятьОтметку</Action>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+	</Commands>
+</Form>

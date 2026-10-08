@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.Сотрудники" id="22129279-8cfe-4a3a-a7a5-8330b42aa9da" configVersion="e189d52c20d56c41a306a8ea94d62f8e00000000">
+			<Metadata name="Catalog.Сотрудники.Attribute.Должность" id="13f5e519-8f48-40ef-9658-65ed1fb37f56"/>
+			<Metadata name="Catalog.Сотрудники.Attribute.ТабельныйНомер" id="a8d5bd90-47e9-46f6-84f7-06a6e1f23bb5"/>
+			<Metadata name="Catalog.Сотрудники.Attribute.Подразделение" id="b6bb5afe-c7e0-48ec-86aa-bfa48ffcce56"/>
+		</Metadata>
+		<Metadata name="Configuration.Конфигурация" id="05b41cc0-adb7-4493-bbec-a7f01417628c" configVersion="8f078eaf0391c54ab14f239bd08eb97000000000"/>
+		<Metadata name="DataProcessor.ПечатьПриказовПоПремии" id="f925c2a5-2684-4c8f-a301-faa855e1cbdf" configVersion="d7f8c2776f7bf240b5d87152c6eaf2da00000000">
+			<Metadata name="DataProcessor.ПечатьПриказовПоПремии.TabularSection.Сотрудники.Attribute.Пометка" id="0141d443-7373-4770-a3f9-98e6f05066c5"/>
+			<Metadata name="DataProcessor.ПечатьПриказовПоПремии.TabularSection.Сотрудники.Attribute.Сотрудник" id="2f561298-c9b7-4a3d-aab1-d618d7c9dd5e"/>
+			<Metadata name="DataProcessor.ПечатьПриказовПоПремии.Attribute.Премия" id="43ce4fb5-c129-40e2-9f4a-55f57c084c5b"/>
+			<Metadata name="DataProcessor.ПечатьПриказовПоПремии.TabularSection.Сотрудники.Attribute.Сумма" id="adcde6d1-d892-41f0-ba6a-c83354c36528"/>
+			<Metadata name="DataProcessor.ПечатьПриказовПоПремии.TabularSection.Сотрудники" id="c70497ac-166e-4bab-87ba-b1818898b3e5"/>
+		</Metadata>
+		<Metadata name="DataProcessor.ПечатьПриказовПоПремии.Form.Форма" id="b1417ff0-432b-4682-9b05-d27f0b9afa65" configVersion="0f953ac706d3a542b6da0f6e3525406a00000000"/>
+		<Metadata name="DataProcessor.ПечатьПриказовПоПремии.Form.Форма.Form" id="b1417ff0-432b-4682-9b05-d27f0b9afa65.0" configVersion="dcbf4b9af1eab9459dab72170ba7543a00000000"/>
+		<Metadata name="DataProcessor.ПечатьПриказовПоПремии.Template.Приказ" id="84dc52db-c89e-4830-9cd1-2cf09d218676" configVersion="26ada7c558601146aa375f0755e7e60c00000000"/>
+		<Metadata name="DataProcessor.ПечатьПриказовПоПремии.Template.Приказ.Template" id="84dc52db-c89e-4830-9cd1-2cf09d218676.0" configVersion="e4ddde3d1642324eb8fed528c842d1c800000000"/>
+		<Metadata name="Document.Премия" id="74318ba6-e514-4981-9ca7-e41920d70f3b" configVersion="85cf96ffcf9c08449634dc74190adc2000000000">
+			<Metadata name="Document.Премия.Attribute.Организация" id="65002218-bdc8-429f-a184-4e7b90a96620"/>
+			<Metadata name="Document.Премия.TabularSection.Сотрудники.Attribute.Сотрудник" id="91282348-ea30-467a-8116-019d57f814d6"/>
+			<Metadata name="Document.Премия.TabularSection.Сотрудники.Attribute.ВидПремии" id="9bda1cbe-6219-46b7-9717-2ecda2e4b803"/>
+			<Metadata name="Document.Премия.TabularSection.Сотрудники.Attribute.Сумма" id="ad2c39f4-f180-48f6-bb19-f0b10bd9b69f"/>
+			<Metadata name="Document.Премия.TabularSection.Сотрудники" id="d0493903-09d2-40ca-8ad4-abf35844f6bc"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="7ca3e324-ac1f-4305-a0a0-d5938962311a" configVersion="8a5ccbb18230f242a91b9a2f9046258b00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

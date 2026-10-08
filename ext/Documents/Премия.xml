@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="64610d3b-db5e-4381-9fba-bf93f42a77c3">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.Премия" category="Object">
+				<xr:TypeId>f28c3ce9-ecbf-4b36-b982-6658e88f253f</xr:TypeId>
+				<xr:ValueId>beb9f474-89f2-4552-8fc9-c0e118997728</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.Премия" category="Ref">
+				<xr:TypeId>bbc8dfc3-ec42-4adb-b09f-1195376ae901</xr:TypeId>
+				<xr:ValueId>e7c6c00c-fb62-4de2-9eac-dba334c07a7b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.Премия" category="Selection">
+				<xr:TypeId>8d14a888-5a91-4f1e-8f41-988eefbec562</xr:TypeId>
+				<xr:ValueId>2278c19a-99c9-4244-b49e-6c0ff7d64d26</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.Премия" category="List">
+				<xr:TypeId>0f98ece3-bc89-4e64-b958-17ef2c476b60</xr:TypeId>
+				<xr:ValueId>46545662-2d21-43ae-abbf-3c3e405f6747</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.Премия" category="Manager">
+				<xr:TypeId>a7d492cb-21d4-405c-b2e9-9d8eac0b615d</xr:TypeId>
+				<xr:ValueId>b1acec9f-0dca-4363-8468-1aae999e75dd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Премия</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>74318ba6-e514-4981-9ca7-e41920d70f3b</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>
